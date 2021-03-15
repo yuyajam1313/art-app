@@ -1,0 +1,53 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.post-page {
+  position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image: url(post-page.png);
+	background-size: cover;
+}
+.post-page::before {
+  background: inherit;
+  content: '';
+  filter: blur(5px);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+}
+.post-input {
+  position: absolute;
+	top: calc(20% - 35px);
+	left: calc(20% - 100px);
+  
+}
+.field {
+  width: 100%;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+.form__text {
+  width: 100%;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+.actions {
+  width: 100%;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+.form__btn {
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 30%;
+  color: #fff;
+  background-color: #38aef0;
+}
