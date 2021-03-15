@@ -1,0 +1,23 @@
+.list-page {
+  background-color: #fff;
+}
+.list-page-header {
+  background-color: #fff;
+  margin: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header.titel {
+  
+}
+.list-image {
+  background-color: #f0f0f0;
+  margin: 10vh;
+}
+.post-imag {
+  width: 50vh;
+  height: 50vh;
+  margin: 5vh;
+  
+}
