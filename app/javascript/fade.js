@@ -1,0 +1,4 @@
+$(function(){
+ScrollReveal().reveal('.aaa');
+});
+  

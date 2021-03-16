@@ -1,36 +1,52 @@
-
-<header class='top-page-header'>
-  <div class='nav'>
-      <ul class='lists'>
-        <%# <% if user_signed_in? %> 
-          <%# <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li> 
-          <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
-          <li><%= link_to '投稿', new_post_path, class: "post" %></li>
-        <%# <% else %> 
-          <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-          <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-          <li><%= link_to '投稿一覧', post_path(posts_url), class: "list" %></li>
-        <%# <% end %>  
-      </ul>
-  </div>
-</header>
-
 <div class='main'>
-  <div class='main-visual'>
-    <%= image_tag "art-main01.png", class:"main-list" %>
-    <h2 class='main-title'>アート思考</h2>
-  </div>
-  <div class='second-visual'>
-    <div class='artthinking-description'>
-      <h2 class='description-title'>アート思考とは!?</h2>
-        <h3 class='desctiption-text'>
-          自分だけの答えをみつけること
-        </h3>
+    <div class='main-visual'>
+       <div class="scroll-fade">
+      <%= image_tag "art-main01.png", class:"main-image" %>
+       </div>
+      <div class='main-title'>"アート思考で<p>クリエイティブ"</p></div>
+      <div class='top-page-header'>
+       <div class='nav'>
+        <ul class='lists'>
+          <% if user_signed_in? %>
+            <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li> 
+            <li><%= link_to image_tag("logout.png", size: '23x23', class: "logout"), destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <li><%= link_to image_tag("user_icon.png", size: '23x23', class: "sign-up"), new_user_registration_path %></li>
+            <li><%= link_to image_tag("login.png", size: '23x23', class: "login"), new_user_session_path %></li>
+          <% end %>  
+        </ul>
+      </div>
     </div>
   </div>
+    
+  <div class='second-visual'>
+    <%= image_tag "second-visual-image.png", class:"second-image" %>
+    <div class='artthinking-description'>
+       <h2 class='description-title'>アート思考とは!?</h2>
+        <h3 class='desctiption-text'>自分だけの答えをみつけること</h3>
+    </div>
+    <%= link_to '投稿', new_post_path, class: "post" %>
+    <%= link_to '投稿一覧', post_path(posts_url), class: "list" %>
+  </div>
 
-  
 
 
 
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> 
+
+
+

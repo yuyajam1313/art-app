@@ -1,0 +1,57 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+.main-visual {
+
+}
+.main-image {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
+
+
+.main-title {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  color: white;
+  font-size: 28px;
+  font-family: 'Nanum Myeongjo', serif;
+}
+.top-page-header {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  
+ }
+ .nav {
+ 
+ }
+ .lists {
+  list-style: none;
+  display: flex;
+  padding: 20px;
+ }
+ .sign-up {
+  margin-right: 20px;
+ }
+ .user-nickname {
+   padding: 20px;
+   color: black;
+   text-decoration: none;
+ }
+ 
+ .second-visual {
+   
+ }
+ .second-image {
+   width: 100%;
+   position: relative;
+   background-size: cover;
+ }
+.artthinking-description {
+  position: absolute;
+  left: 20px;
+}
