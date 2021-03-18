@@ -1,7 +1,3 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 .post-page {
   position: absolute;
 	top: -20px;
@@ -31,8 +27,13 @@
 }
 .field {
   width: 100%;
-  padding: 10px;
+  height: 100%;
+  
   letter-spacing: 1px;
+}
+.resize-image {
+  width: 50%;
+  height: 50%;
 }
 .form__text {
   width: 100%;
