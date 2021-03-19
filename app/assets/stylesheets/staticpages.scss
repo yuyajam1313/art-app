@@ -75,32 +75,80 @@
   color: white;
   font-family: 'Nanum Myeongjo', serif;
 }
+
 .artthinking-description {
   
 }
-
 .artthinking-title {
   margin: 5%;
   text-align: center;
   font-family: 'Nanum Myeongjo', serif;
+  font-size: 30px;
 }
 .artthinking-commentary {
-  margin: 10%;
+  margin: 5%;
   line-height: 10px;
   text-align: center;
   font-family: 'Nanum Myeongjo', serif;
+  font-size: 20px;
 }
 .list {
 
 }
-.contemporary {
+.app-method {
+  text-align: center;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 30px;
+}
+.swiper-container {
+  width: 75%;
+	height: 500px;
+}
+.swiper-wrapper{
+ 
+}
+.swiper-wrapper> h3 {
+  top: 30px;
+  display: inline;
+}
+.swiper-slide {
+  color: #ffffff;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 200px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 150%;
+}
+.swiper-slide> h5 {
+  line-height: 10px;
+}
+.swiper-slide:nth-child(3n+1) {
+  background-image: url(answer.png); /* //スライド3枚目 */
+  background-size: 100% 100%;
+}
+.swiper-slide:nth-child(3n+2) {
+  background-image: url(visual-information.png); /* //スライド1枚目 */
+  background-size: 100% 100%;
+
+}
+.swiper-slide:nth-child(3n+3) {
+  background-image: url(question.png); /* //スライド2枚目 */
+  background-size: 100% 100%;
   
+}
+
+
+.contemporary {
+  background-color: #f0f0f0;
+  margin-top: 10%;
 }
 .list {
   font-family: 'Nanum Myeongjo', serif;
-  font-size: 25px;
+  font-size: 30px;
   text-decoration: underline;
-  margin-left: 45%;
+  padding-top: 5%;
+  text-align: center;
 }
 .contemporary-image {
   display: flex;
@@ -108,7 +156,8 @@
   justify-content: center;
 }
 .work {
-  width: 20%;
-  height: 20%;
+  width: 15%;
+  height: 15%;
   margin: 5%;
 }
+
