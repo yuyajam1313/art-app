@@ -1,36 +1,96 @@
-
-<header class='top-page-header'>
-  <div class='nav'>
-      <ul class='lists'>
-        <%# <% if user_signed_in? %> 
-          <%# <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li> 
-          <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
-          <li><%= link_to '投稿', new_post_path, class: "post" %></li>
-        <%# <% else %> 
-          <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-          <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-          <li><%= link_to '投稿一覧', post_path(posts_url), class: "list" %></li>
-        <%# <% end %>  
-      </ul>
-  </div>
-</header>
-
 <div class='main'>
-  <div class='main-visual'>
-    <%= image_tag "art-main01.png", class:"main-list" %>
-    <h2 class='main-title'>アート思考</h2>
-  </div>
-  <div class='second-visual'>
-    <div class='artthinking-description'>
-      <h2 class='description-title'>アート思考とは!?</h2>
-        <h3 class='desctiption-text'>
-          自分だけの答えをみつけること
-        </h3>
+    <div class='main-visual'>
+      <%= image_tag "art-main01.png", class:"main-image" %>
+        <div class='main-title'>
+         <h2>"アート思考で</h2>
+         <h3>クリエイティブに"</h3>
+        </div>
+      <div class='top-page-header'>
+       <div class='nav'>
+        <ul class='lists'>
+          <% if user_signed_in? %>
+            <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li> 
+            <li><%= link_to image_tag("post.png", class: "post"), new_post_path %></li>
+            <li><%= link_to image_tag("logout.png", size: '23x23', class: "logout"), destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <li><%= link_to image_tag("user_icon.png", size: '23x23', class: "sign-up"), new_user_registration_path %></li>
+            <li><%= link_to image_tag("login.png", size: '23x23', class: "login"), new_user_session_path %></li>
+          <% end %>  
+        </ul>
+      </div>
     </div>
   </div>
+    
+  <div class='second-visual'>
+    <%= image_tag "second-visual-image.png", class:"second-image" %>
+      <div class='artthinking'>
+        <h3>「正解を見つける力」から</h3>
+        <h2>「答えを作る力」へ</h2>
+      </div>
+      
+      <div class="artthinking-description">
+        <h3 class="artthinking-title">アート思考とは!?<p>"自分だけの答えを作ること"</p></h3>
+         <div class="artthinking-commentary">
+            <h4>数学は太陽のように明確で唯一の答えが存在しています。</h4>
+            <h4>「1+1＝2」が正しいことは、すでにはっきりしています。</h4>
+            <h4>数学が太陽とするならば、アートは雲です。</h4>
+            <h4>太陽はいつもそこにありますが、雲は形を変えています。</h4>
+            <h4>アーティストが導き出す自分なりの答えは、そもそも形が定まっておらず、</h4>
+            <h4>見る人や時が異なれば、いかようにも変化します。</h4>
+            <h4>子どもは空に浮かぶ雲を眺めながら、「ゾウがいる」「巨人にも見える」</h4>
+            <h4>「やっぱりトリだ」などと「自分なりの答え」を作ってます。</h4>
+            <h4>アート思考の目的は、この「自分なりの答え（＝雲）」を作る思考力を育むことです。</h4>
+         </div>
+         <script>ScrollReveal().reveal('.artthinking-description', { 
+                 duration: 1600,
+                 reset: true   
+         });</script>
+      </div>
+    </div>
+     
+    <h3 class="app-method">アート思考のメソッド</h3> 
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><h2>"視覚で感じたこと"</h2>
+              <h5>こちちらはピカソの有名な作品です。</h5>
+              <h5>この作品を見て何をかんじるでしょうか?</h5>
+              <h5>なんか悲しそう、色がカラフルだな、よくわからない、</h5>
+              <h5>まずは自分が感じたことを素直に書いてみましょう</h5>
+            </div>
+            <div class="swiper-slide"><h2>"自ら問いを作る"</h2>
+              <h5>先程の作品であれえば、なにか悲しい出来事があったのかな?</h5>
+              <h5>沢山の色使いが、今自分に沢山のことが起きていて、目まぐるしいのかな?</h5>
+              <h5>いや、それとも嬉し泣きなんじゃないかな?</h5>
+              <h5>いろんな角度から、問いを作り出してみましょう!</h5>
+            </div>
+            <div class="swiper-slide"><h2>"自なりの答え"</h2>
+              <h5>先程の作品で自分が出した答えは、</h5>
+              <h5>「自分に関わるもの全てに感謝を表している絵」です。</h5>
+              <h5>このように、自分なりの答えをつくることが、”アート思考”です!</h5>
+              <h5>アート思考をしていくことで、どんどん自分の発想もクリエイティブになります!</h5>
+              <h5>自分らしく、自由に、アート思考を楽しみましょう！！</h5>
+            </div>
+        </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+    </div>
 
-  
+   <div class="contemporary">
+     <div class="list"><%= link_to 'コンテンポラリー', post_path(posts_url) %></div>
+     <div class="contemporary-image">
+      <%= image_tag "img1.jpg", class:"work" %>
+      <%= image_tag "img2.jpg", class:"work" %>
+      <%= image_tag "img3.jpg", class:"work" %>
+      <script>ScrollReveal().reveal('.contemporary-image', { 
+                 duration: 1600,
+                 reset: true   
+         });</script>
+   </div>
+
+    
+
+</div> 
 
 
 
-</div>

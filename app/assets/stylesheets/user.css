@@ -12,11 +12,11 @@
 .account-page .account-page__inner .account-page__inner--left {
   position: absolute;
 	top: calc(40% - 35px);
-	left: calc(50% - 300px);
+	left: calc(40% - 300px);
 }
 .account-page .account-page__inner .account-page__inner--right {
 	position: absolute;
-	top: calc(20% - 50px);
+	top: calc(10% - 50px);
 	right: calc(50% - 350px);
 }
 .account-page .account-page__inner:after {

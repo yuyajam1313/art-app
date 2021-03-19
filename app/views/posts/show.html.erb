@@ -1,11 +1,17 @@
 <div class='list-page'>
+    <div class="page-icon">
+      <%= link_to image_tag("home.png", size: '23x23', class: "home"), root_path %>
+    </div>
   <div class='list-page-header'>
-    <div class='header-title'>アート作品一覧</div>
+    <div class='header-title'>コンテンポラリー</div>
   </div>
-  <%= link_to 'トップページ', root_path, class: 'top-page' %>
   <div class='list-image'>
     <% @posts.each do |post| %>
       <%= image_tag post.image, class: "post-imag" %>
     <% end %>
   </div>
+  <script>ScrollReveal().reveal('.list-page', { 
+                 duration: 1600,
+                 reset: true   
+         });</script>
 </div>
