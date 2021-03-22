@@ -30,8 +30,9 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.list-image>.post-imag {
+.post_imag {
   width: 40vh;
   height: 40vh;
-  padding: 2vw;
+  padding: 10%;
+ 
 }

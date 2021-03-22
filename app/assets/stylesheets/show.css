@@ -1,0 +1,48 @@
+.header {
+  margin: auto;
+}
+.home {
+  margin-right: 10px;
+}
+.contemporary {
+  margin-left: 10px;
+}
+.post-main {
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+.post-img {
+  width: 60%;
+  margin-left: 23%;
+}
+.post-main>.post-visual_reading, .post-question, .post-answer, .post-nickname {
+  text-align: center;
+  padding-top: 20px;
+}
+.post-comment {
+  margin-left: 5%;
+}
+.post-comment>.field {
+  
+}
+.field>.form_text {
+  width: 60%;
+  height: 60px;
+}
+.actions>.form_btn {
+  width: 10%;
+  margin-top: 20px;
+  margin-left: 45%;
+  color: #fff;
+  background-color: #38aef0;
+}
+
+.other-comments {
+  font-family: 'Nanum Myeongjo', serif;
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 10%;
+}
+.other-comments>.h2 {
+  
+}

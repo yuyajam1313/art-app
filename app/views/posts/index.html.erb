@@ -7,7 +7,7 @@
   </div>
   <div class='list-image'>
     <% @posts.each do |post| %>
-      <%=link_to image_tag(post.image, class: "post-imag"), post_path(post.id) %>
+      <%=link_to image_tag(post.image, class: "post_imag"), post_path(post.id) %>
     <% end %>
   </div>
   <script>ScrollReveal().reveal('.list-page', { 
