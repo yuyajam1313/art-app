@@ -1,3 +1,24 @@
+.start {
+	background: #ffffff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 200px;
+  font-size: 70px;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
 .main {
   width: 100vw;
   height: 100vh;
@@ -21,6 +42,7 @@
   font-weight: bold;
   animation-name: fadein;
   animation-duration: 2s;
+  animation-delay: 2.55s;
 }
 @keyframes fadein {
   from {
