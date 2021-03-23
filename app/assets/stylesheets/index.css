@@ -1,0 +1,38 @@
+.list-page {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+}
+.page-icon {
+  width: 100%;
+}
+.home {
+  margin: 0 0 0 90vw;
+}
+.list-page-header {
+  background-color: #fff;
+  margin: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-title {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 30px;
+}
+.list-image {
+  background-color: #f0f0f0;
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.post_imag {
+  width: 40vh;
+  height: 40vh;
+  padding: 10%;
+ 
+}

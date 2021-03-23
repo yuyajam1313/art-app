@@ -10,7 +10,8 @@ class User < ApplicationRecord
   end
 
   has_many :posts
-  
+  has_many :comments
+
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :gender
   belongs_to :age

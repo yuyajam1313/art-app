@@ -1,16 +1,56 @@
-<div class='list-page'>
-    <div class="page-icon">
-      <%= link_to image_tag("home.png", size: '23x23', class: "home"), root_path %>
+<div class="contemporary-content">
+<div class="header">
+  <%= link_to image_tag("home.png", size: '23x23', class: "home"), root_path %>
+  <%= link_to image_tag("contemporary.png", size: '23x23', class: "contemporary"), posts_path %>
+</div>
+
+ <div class="post-main">
+      <%= image_tag @post.image, class:"post-img" %>
+    <div class="post-visual_reading">
+      <%= @post.visual_reading %>
     </div>
-  <div class='list-page-header'>
-    <div class='header-title'>コンテンポラリー</div>
-  </div>
-  <div class='list-image'>
-    <% @posts.each do |post| %>
-      <%= image_tag post.image, class: "post-imag" %>
-    <% end %>
-  </div>
-  <script>ScrollReveal().reveal('.list-page', { 
+    <div class="post-question">
+      <%= @post.question %>
+    </div>   
+    <div class="post-answer">
+      <%= @post.answer %>
+    </div> 
+    <div class="post-nickname">
+      <%= @post.user.nickname %>  
+    </div>
+ </div>
+
+<div class="post-comment">
+  <%= form_with(model: [@post, @comment], local: true) do |f| %>
+    <div class="field">
+      <%= f.label :visual_reading, "視覚で感じること" %><br />
+      <%= f.text_area :visual_reading, class: :form_text %><br />
+
+      <%= f.label :question, "自ら作った問い" %><br />
+      <%= f.text_area :question, class: :form_text %><br />
+      
+      <%= f.label :answer, "自分なりの答え" %><br />
+      <%= f.text_area :answer, class: :form_text %>
+    </div>
+    
+    <div class="actions">
+      <%= f.submit "投稿", class: :form_btn %>
+    </div>
+  <% end %>
+</div>
+
+<div class="other-comments">
+  <h2>other think</h2>
+  <% @comments.each do |comment| %>
+    <p>
+    <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
+    <%= comment.visual_reading %>
+    <%= comment.question%>
+    <%= comment.answer %>
+    </p>
+  <% end %>
+</div>
+<script>ScrollReveal().reveal('.contemporary-content', { 
                  duration: 1600,
                  reset: true   
          });</script>
