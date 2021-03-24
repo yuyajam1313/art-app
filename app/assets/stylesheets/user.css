@@ -6,8 +6,12 @@
 	bottom: -40px;
 	width: auto;
 	height: auto;
-	background-image: url(sign-in.png);
-	background-size: cover;
+	/* background-image: url(sign-in.png); */
+	/* background-size: cover; */
+}
+.backgraund-image {
+  width: 100vw;
+  height: 100vh;
 }
 .account-page .account-page__inner .account-page__inner--left {
   position: absolute;
@@ -51,8 +55,8 @@
   margin-bottom: 10px;
 }
 .account-page .field .field-label {
-  padding: 10px 0;
-  letter-spacing: 1px;
+  /* padding: 10px 0; */
+  /* letter-spacing: 1px; */
   font-size: 14px;
   font-weight: 200;
 }

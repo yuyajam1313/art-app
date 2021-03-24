@@ -29,6 +29,10 @@
       <div class='artthinking'>
         <h3>「正解を見つける力」から</h3>
         <h2>「答えを作る力」へ</h2>
+        <script>ScrollReveal().reveal('.artthinking', { 
+                 duration: 1600,
+                 reset: true   
+         });</script>
       </div>
       
       <div class="artthinking-description">
@@ -51,8 +55,8 @@
       </div>
     </div>
      
-    <h3 class="app-method">アート思考のメソッド</h3> 
       <div class="swiper-container">
+        <h3 class="app-method">アート思考のメソッド</h3> 
           <div class="swiper-wrapper">
             <div class="swiper-slide"><h2>"視覚で感じたこと"</h2>
               <h5>こちちらはピカソの有名な作品です。</h5>
@@ -78,6 +82,10 @@
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
               <div class="swiper-pagination"></div>
+              <%# <script>ScrollReveal().reveal('.swiper-container', { 
+                 duration: 1600,
+                 reset: true   
+         });</script> %>
     </div>
 
    <div class="contemporary">
@@ -86,7 +94,8 @@
       <%= image_tag "img1.jpg", class:"work" %>
       <%= image_tag "img2.jpg", class:"work" %>
       <%= image_tag "img3.jpg", class:"work" %>
-      <script>ScrollReveal().reveal('.contemporary-image', { 
+      <%= image_tag "img4.jpg", class:"work" %>
+      <script>ScrollReveal().reveal('.contemporary', { 
                  duration: 1600,
                  reset: true   
          });</script>
