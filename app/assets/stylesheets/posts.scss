@@ -6,7 +6,7 @@
 	bottom: -40px;
 	width: auto;
 	height: auto;
-	background-image: url(post-page.png);
+	background-image: image-url("post-page.png");
 	background-size: cover;
 }
 .post-page::before {
@@ -21,7 +21,7 @@
 }
 .post-input {
   position: absolute;
-	top: calc(20% - 35px);
+	top: calc(15% - 35px);
 	left: calc(20% - 100px);
   
 }

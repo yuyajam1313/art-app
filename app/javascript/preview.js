@@ -1,5 +1,5 @@
 $(function(){
-  $('#post-image').change(function(){
+  $('#post-image').on("change",function(){
       $('img').remove();
       var file = $(this).prop('files')[0];
       var fileReader = new FileReader();
