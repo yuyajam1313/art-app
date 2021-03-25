@@ -7,13 +7,13 @@
 
 # DEMO
 ### トップページ
-
+[![Image from Gyazo](https://i.gyazo.com/a296382b4c9cd23fdd702bfbfad3d380.gif)](https://gyazo.com/a296382b4c9cd23fdd702bfbfad3d380)
 ### ユーザー登録画面
-
+[![Image from Gyazo](https://i.gyazo.com/0fdd24a8937bf8b34e9fd318146dbf2f.jpg)](https://gyazo.com/0fdd24a8937bf8b34e9fd318146dbf2f)
 ### 投稿画面
-
+[![Image from Gyazo](https://i.gyazo.com/984f3cd9df76caa68a939be08e5e71c5.jpg)](https://gyazo.com/984f3cd9df76caa68a939be08e5e71c5)
 ### コメント画面
-
+[![Image from Gyazo](https://i.gyazo.com/68ade97eef56152945ddb2de907f2088.gif)](https://gyazo.com/68ade97eef56152945ddb2de907f2088)
 
 # 利用方法
 #### 新規登録・ログイン方法
