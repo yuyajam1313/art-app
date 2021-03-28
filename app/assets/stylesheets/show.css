@@ -19,6 +19,17 @@
   text-align: center;
   padding-top: 20px;
 }
+.post-edit {
+  width: 23px;
+  height: 23px;
+  margin: 10px 3% 5% 45%;
+}
+.post-destroy {
+  width: 23px;
+  height: 23px;
+  margin: 0 0 5% 3%;
+}
+
 .post-comment {
   margin-left: 5%;
 }

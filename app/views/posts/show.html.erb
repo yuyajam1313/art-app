@@ -20,6 +20,14 @@
     </div>
  </div>
 
+
+  <% if user_signed_in? %>
+      <% if current_user == @post.user %>
+        <%= link_to image_tag("edit.png", size: '23×23', class: "post-edit"), edit_post_path(@post.id), method: :get %>
+        <%= link_to image_tag("destroy.png", size: '23×23', class: "post-destroy"), post_path(@post.id), method: :delete %>
+      <% end %>
+    <% end %>
+
 <div class="post-comment">
   <%= form_with(model: [@post, @comment], local: true) do |f| %>
     <div class="field">
@@ -43,7 +51,7 @@
   <h2>other think</h2>
   <% @comments.each do |comment| %>
     <p>
-    <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
+    <strong><%= link_to comment.user.nickname, staticpage_path %>：</strong>
     <%= comment.visual_reading %>
     <%= comment.question%>
     <%= comment.answer %>
