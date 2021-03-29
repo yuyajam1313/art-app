@@ -9,10 +9,10 @@
 https://art-app-34408.herokuapp.com/
 
 # テスト用アカウント
-###認証
-- username art
-- password 34408
-###ユーザーログイン
+### 認証
+- username  art
+- password  34408
+### ユーザーログイン
 - email: test@test
 - password: test123456
 
