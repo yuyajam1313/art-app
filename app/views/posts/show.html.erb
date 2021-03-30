@@ -51,7 +51,7 @@
   <h2>other think</h2>
   <% @comments.each do |comment| %>
     <p>
-    <strong><%= link_to comment.user.nickname, staticpage_path %>：</strong>
+    <strong><%= comment.user.nickname %>：</strong>
     <%= comment.visual_reading %>
     <%= comment.question%>
     <%= comment.answer %>

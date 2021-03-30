@@ -12,7 +12,7 @@
        <div class='nav'>
         <ul class='lists'>
           <% if user_signed_in? %>
-            <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li> 
+            <li><%= link_to current_user.nickname, staticpage_path(current_user.posts), class: "user-nickname" %></li> 
             <li><%= link_to image_tag("post.png", class: "post"), new_post_path %></li>
             <li><%= link_to image_tag("logout.png", size: '23x23', class: "logout"), destroy_user_session_path, method: :delete %></li>
           <% else %>
