@@ -1,1 +1,18 @@
-ユーザー投稿詳細ページ
+<div class='list-page'>
+    <div class="page-icon">
+      <%= link_to image_tag("home.png", size: '23x23', class: "home"), root_path %>
+      <%= link_to image_tag("contemporary.png", size: '23x23', class: "contemporary"), posts_path %>
+    </div>
+  <div class='list-page-header'>
+    <div class='header-title'>My page</div>
+  </div>
+  <div class='list-image'>
+    <% @posts.each do |post| %>
+      <%= link_to image_tag(post.image, class: "post_imag"), post_path(post.id) %>
+    <% end %>
+  </div>
+  <script>ScrollReveal().reveal('.list-page', { 
+                 duration: 1600,
+                 reset: true   
+         });</script>
+</div>

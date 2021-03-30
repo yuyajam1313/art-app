@@ -51,8 +51,9 @@
 .other-comments {
   font-family: 'Nanum Myeongjo', serif;
   text-align: center;
-  margin-top: 7%;
+  margin-top: 5%;
   margin-bottom: 10%;
+  line-height: 40px;
 }
 .other-comments>.h2 {
   
